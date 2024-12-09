@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <title>Dashboard</title>
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <nav>
+        <a href="about-us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="buttons-section">
+    <div class="button-box">
+
+      <button class="action-button donor-button" onclick="navigateTo('donate.html')">Donate</button>
+
+      <button class="action-button receiver-button" onclick="navigateTo('receiver.html')">Receiver</button>
+
+      <button class="action-button previous-donors-button" onclick="navigateTo('history.html')">View Previous Donors</button>
+
+      <button class="action-button collected-button" onclick="navigateTo('collected.html')">View Collected Donations</button>
+
+      <button class="action-button not-collected-button" onclick="navigateTo('not-collected.html')">View Not Collected Donations</button>
+    </div>
+  </main>
+
+  <footer>
+    <button id="logoutButton">Logout</button>
+  </footer>
+
+  <script>
+
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+
+    document.getElementById('logoutButton').addEventListener('click', () => {
+
+      window.location.href = 'index.html'; 
+    });
+  </script>
+</body>
+</html>

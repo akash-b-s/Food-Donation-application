@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #0f8719;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85); 
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 450px;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container:hover {
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #13e073;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.6s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+form input {
+  width: 100%;
+  padding: 15px;
+  margin: 12px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input:focus {
+  border-color: #48c6ef;
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+  box-shadow: 0 0 12px rgba(72, 198, 239, 0.4);
+  transform: translateY(-3px);
+}
+
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#googleSignIn {
+  width: 100%;
+  padding: 16px;
+  background-color: #db4437;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#googleSignIn:hover {
+  background-color: #c1351d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ddd;
+  transition: color 0.3s ease;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+p a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+  bottom: -4px;
+  left: 0;
+}
+
+p a:hover {
+  color: #0056b3;
+}
+
+p a:hover::after {
+  width: 100%;
+}
+
+form input, button {
+  transform: translateY(10px);
+  opacity: 0;
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+form input:nth-child(1), button:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+form input:nth-child(2), button:nth-child(3) {
+  animation-delay: 0.4s;
+}

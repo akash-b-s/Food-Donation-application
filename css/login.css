@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #31a70d;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  color: #10e930;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.google-signin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.google-signin img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.google-signin {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+ 
+  color: rgb(20, 13, 13);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.google-signin img {
+  width: 20px;
+  margin-right: 10px;
+}

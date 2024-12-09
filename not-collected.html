@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not Collected Donations</title>
+  <link rel="stylesheet" href="css/not-collected.css">
+  <script type="module" src="js/not-collected.js" defer></script>
+</head>
+<body>
+  <header>
+    <button id="backButton" onclick="window.location.href = 'dashboard.html';"> Back to Dashboard</button>
+    <h1>Not Collected Donations</h1>
+  </header>
+  <div id="donationsList">
+    <table id="donationsTable">
+      <thead>
+        <tr>
+          <th>Food Item</th>
+          <th>Quantity</th>
+          <th>Expiry Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Donation rows will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
